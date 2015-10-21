@@ -1,0 +1,201 @@
+/* line 1, ../scss/main.scss */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../scss/main.scss */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../scss/main.scss */
+.navigation {
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  font-size: .7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 30, ../scss/main.scss */
+.navigation a {
+  font-family: sans-serif;
+  display: block;
+  padding: 1em;
+  color: #6274F9;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+/* line 38, ../scss/main.scss */
+.navigation a:hover {
+  color: blue;
+}
+/* line 41, ../scss/main.scss */
+.navigation #web-experiments {
+  font-family: 'adriane', 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: none;
+}
+/* line 49, ../scss/main.scss */
+.navigation #web-experiments:hover {
+  color: #6274F9;
+}
+
+/* line 56, ../scss/main.scss */
+.full-page {
+  height: 100%;
+}
+
+/* line 60, ../scss/main.scss */
+#post-2 {
+  padding: none;
+  color: #ff002b;
+}
+/* line 63, ../scss/main.scss */
+#post-2 h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #969696;
+  z-index: -1;
+}
+
+/* line 77, ../scss/main.scss */
+#reloadTyping {
+  background: #0bdd15;
+  color: #000;
+}
+
+/* line 82, ../scss/main.scss */
+#post-1 {
+  padding: 10% 10% 0 10%;
+  background-color: #111;
+  color: #0bdd15;
+  font-family: monospace;
+}
+/* line 88, ../scss/main.scss */
+#post-1 .container {
+  padding: 5px 10px 5px 10px;
+}
+/* line 92, ../scss/main.scss */
+#post-1 button {
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin-left: 10px;
+  padding: 8px 10px 8px 10px;
+  background: white;
+  color: black;
+  border: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 107, ../scss/main.scss */
+#post-1 button:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+/* line 112, ../scss/main.scss */
+#post-1 button:focus {
+  outline: 0;
+}
+/* line 116, ../scss/main.scss */
+#post-1 span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  background: #111;
+  border-left: 0.1em solid white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 127, ../scss/main.scss */
+#post-1 h1 {
+  position: relative;
+  margin-left: 0;
+  float: left;
+  font-size: 2vw;
+}
+/* line 138, ../scss/main.scss */
+#post-1 h1 .hello_typer {
+  animation: typeit 2s steps(12, end), the_cursor 1s step-end infinite, hide_cursor 2s linear 2s infinite;
+  -moz-animation: typeit 2s steps(12, end), the_cursor 1s step-end infinite, hide_cursor 2s linear 2s infinite;
+}
+/* line 148, ../scss/main.scss */
+#post-1 p {
+  position: relative;
+  float: left;
+  margin: 0;
+  font-size: 1.8vw;
+}
+/* line 154, ../scss/main.scss */
+#post-1 .hide_line2 {
+  animation: hide_text 2s linear;
+}
+/* line 156, ../scss/main.scss */
+#post-1 .hide_line2 .line2_typer {
+  animation: typeit 4s steps(70, end) 2s, the_cursor 1s step-end infinite, hide_cursor 2s linear 6s infinite;
+  -moz-animation: typeit 4s steps(70, end) 2s, the_cursor 1s step-end infinite, hide_cursor 2s linear 6s infinite;
+}
+/* line 166, ../scss/main.scss */
+#post-1 .hide_line3 {
+  animation: hide_text 6s linear;
+}
+/* line 168, ../scss/main.scss */
+#post-1 .hide_line3 .line3_typer {
+  animation: typeit 4s steps(64, end) 6s, the_cursor 1s step-end infinite;
+  -moz-animation: typeit 4s steps(64, end) 6s, the_cursor 1s step-end infinite;
+}
+@keyframes hide_text {
+  from, to {
+    opacity: 0;
+  }
+}
+@keyframes typeit {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes the_cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes hide_cursor {
+  from, to {
+    border-color: transparent;
+  }
+}
